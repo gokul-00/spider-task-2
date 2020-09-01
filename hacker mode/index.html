@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pagination hide">
+        <a href="#" class="nav-item">1</a>
+        <a href="#" class="nav-item">2</a>
+        <a href="#" class="nav-item">3</a>
+        <a href="#" class="nav-item">4</a>
+        <a href="#" class="nav-item">5</a>
+        <a href="#" class="nav-item">6</a>
+        <a href="#" class="nav-item">7</a>
+        <a href="#" class="nav-item">8</a>
+        <a href="#" class="nav-item">9</a>
+        <a href="#" class="nav-item">10</a>
+    </div>
+    <div class="container">
+        <div class="instruction">
+            ❗❗❗ Instructions <br>
+            💨 This Quiz contains 10 questions. All are optional. <br>
+            💨 Time Period : 2 minutes <br>
+            💨 You can navigate to any question during given period of time. <br>
+            💨 You can answer a question only once.<br>
+            💨 Unanswered questions will be shown 💜Blue in navigation box<br>
+            💨 Answered questions will be shown as per the correctness of your answer(correct => green💚 && wrong => red🧡)<br>
+        </div>
+        <div id="timer">Quiz ends in <span id="time">02:00</span> minutes!</div>
+        <div class="quiz-container">
+            <div id="question" class="hide">
+                question
+            </div>
+            <div id="options-container">
+            </div>
+            <div id="status"></div>
+            <div class="input-name" id="input-name">
+                <form action="#">
+                    <input type="text" name="name" id="name">
+                    <button type="submit" id="enter" class="btn">Enter</button>
+                </form>
+            </div>
+            <div class="controls">            
+                <button id="start-btn" class="btn">Start</button>
+                <button id="prev-btn" class="btn hide">Prev</button>
+                <button id="next-btn" class="btn hide">Next</button>                        
+            </div>
+            <button id="submit" class="btn hide">submit</button>
+        </div>
+        <div class="score-board">
+            <div id="score-card"></div>
+            <button id="restart" class="btn hide">restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
